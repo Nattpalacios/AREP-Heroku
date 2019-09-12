@@ -20,8 +20,8 @@ public class App {
     	
     	//setPort(4567);
         port(getPort());
-        get("/introDatos", (req, res) -> introducirDatos(req, res));
-        get("/operaciones", (req, res) -> operaciones(req, res));
+        get("/inputdata", (req, res) -> introducirDatos(req, res));
+        get("/results", (req, res) -> operaciones(req, res));
     }
     
 	private static String introducirDatos(Request req, Response res) {
